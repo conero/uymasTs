@@ -1,2 +1,7 @@
 # uymasTs
-Base Web UI with Typescript for Broswer
+Base Web UI with [Typescript](https://www.typescriptlang.org/) for Broswer
+
+
+
+
+

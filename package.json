@@ -1,0 +1,26 @@
+{
+  "name": "uymasts",
+  "version": "1.0.0",
+  "description": "typescript for web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conero/uymasTs.git"
+  },
+  "author": "Joshua Conero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/conero/uymasTs/issues"
+  },
+  "homepage": "https://github.com/conero/uymasTs#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.2.2",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
+  }
+}
