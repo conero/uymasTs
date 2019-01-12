@@ -10,7 +10,7 @@ import {KvObject, CoordinatePoints} from "./index";
 export default class Dom{
     $dom: Element;
     protected selectors: string;
-    private _evtsQueStack: KvObject;
+    private _evtsQueStack: KvObject;        // 事件绑定栈列
     constructor(query: string, parentDom?: Element){
         parentDom = parentDom || <any>document;
         this.$dom = parentDom.querySelector(query);
