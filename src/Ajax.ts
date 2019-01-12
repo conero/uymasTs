@@ -3,7 +3,7 @@
  * Ajax 处理
  */
 ///<reference path="./index.d.ts"/>
-import { AjaxOptions } from ".";
+import { AjaxOptions } from "./index";
 import Core from './Core'
 
 const POST: string = 'POST';

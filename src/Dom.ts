@@ -5,7 +5,7 @@
  * @class Dom
  */
 ///<reference path="./index.d.ts"/>
-import {KvObject} from ".";
+import {KvObject, CoordinatePoints} from "./index";
 
 export default class Dom{
     $dom: Element;
@@ -62,4 +62,31 @@ export default class Dom{
         return this;
     }
 
+    /**
+     * 获取bon所在坐标
+     */
+    point(): CoordinatePoints{
+        let cp = {x: 0, y: 0};
+        let ele = <any>this.$dom;
+        let y = ele.offsetTop,
+            x = ele.offsetLeft
+        ;
+        let op = ele.offsetParent;
+        while (true){
+            // console.log(op);
+            if(!op.offsetParent){
+                break;
+            }
+            x += op.offsetLeft;
+            y += op.offsetTop;
+
+            // 遍历
+            let op1 = op.offsetParent || false;
+            if(op1){
+                op = op1;
+            }
+        }
+        cp = {x, y};
+        return cp;
+    }
 }

@@ -3,10 +3,16 @@
  * 页面秒速
  */
 
+// K-v 对象
 export interface KvObject {
     [k: string]: any
 }
 
+// 二维坐标轴
+export interface CoordinatePoints {
+    x?: number
+    y?: number
+}
 // AjaxOptions
 export interface AjaxOptions{
     url: string
